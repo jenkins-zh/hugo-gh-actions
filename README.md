@@ -38,6 +38,5 @@ jobs:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         HUGO_VERSION: "0.53"
         WEBSITE_GIT: "git@github.com:LinuxSuRen/linuxsuren.github.io.git"
-        GIT_USER: ""
-        GIT_EMAIL: ""
+        WEBSITE_DIR: "linuxsuren.github.io"
 ```

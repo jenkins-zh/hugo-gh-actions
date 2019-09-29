@@ -20,8 +20,8 @@ echo '=================== Build site ==================='
 hugo
 ls -hal
 echo '=================== Publish to GitHub Pages ==================='
-cp -R public/* linuxsuren.github.io
-cd linuxsuren.github.io && \
+cp -R public/* ${WEBSITE_DIR}
+cd ${WEBSITE_DIR} && \
 git config user.name "${GITHUB_ACTOR}" && \
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
 git log -3 && \

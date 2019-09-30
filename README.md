@@ -4,6 +4,8 @@ GitHub Action for building and publishing Hugo-built site.
 
 Inspired by [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages)
 
+This GitHub Action allows you to deploy your Hugo git repo into another one.
+
 ## Secrets
 
 - `GIT_DEPLOY_KEY` - *Required* your deploy key which has **Write access**
@@ -18,6 +20,8 @@ Inspired by [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/kha
 ## Environment Variables
 
 - `HUGO_VERSION` : **optional**, default is **0.54.0** - [check all versions here](https://github.com/gohugoio/hugo/releases)
+- `WEBSITE_GIT` : **required**, the website git repo which you want to deploy
+- `WEBSITE_DIR` : **required**, the directory which your website git repo will clone into
 
 ```
 name: Deploy to GitHub Pages

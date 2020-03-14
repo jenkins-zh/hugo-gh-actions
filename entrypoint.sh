@@ -22,8 +22,8 @@ ls -hal
 echo '=================== Publish to GitHub Pages ==================='
 cp -R public/* ${WEBSITE_DIR}
 cd ${WEBSITE_DIR} && \
-git config user.name "${GITHUB_ACTOR}" && \
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
+git config user.name "rick" && \
+git config user.email "361981269@qq.com" && \
 git log -3 && \
 git add . && \
 pwd && \

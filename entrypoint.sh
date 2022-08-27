@@ -20,6 +20,7 @@ echo '=================== Build site ==================='
 hugo
 ls -hal
 echo '=================== Publish to GitHub Pages ==================='
+mkdir -p ${WEBSITE_DIR}
 cp -R public/* ${WEBSITE_DIR}
 cd ${WEBSITE_DIR} && \
 git config user.name "rick" && \
